@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mi_logo">75dp</dimen>
+    <dimen name="mi_titulo">15sp</dimen>
+    <dimen name="redondeadas">3dp</dimen>
+</resources>
