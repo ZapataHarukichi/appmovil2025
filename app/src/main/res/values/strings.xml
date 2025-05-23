@@ -2,4 +2,11 @@
     <string name="app_name">appmovil2025</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Que_es">¿Qué es Mobile Summit?</string>
+    <string name="hora">09:00 am</string>
+    <string name="MS_description">Permite a los usuarios registrarse y acceder a conferencias en vivo o grabadas.
+Ofrece agendas personalizadas, recordatorios y notificaciones de eventos.
+Facilita la interacción mediante chats en vivo, encuestas y preguntas al ponente.
+Proporciona acceso a materiales, certificados y networking entre asistentes.
+</string>
 </resources>

@@ -6,16 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activities.SplashScreenActivity"
-    android:background="@color/colorprimario">
+    android:background="@color/white"
+    >
 
     <ImageView
         android:id="@+id/ivlogoinicial"
+        android:layout_marginLeft="100dp"
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/uns_logo" />
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

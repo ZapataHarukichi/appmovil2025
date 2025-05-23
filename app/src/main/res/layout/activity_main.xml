@@ -20,7 +20,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/mi_logo"
                 android:contentDescription="SUMMIT"
-                android:src="@drawable/logo_conferencia"
+                android:src="@drawable/slogan_conferencia"
                 tools:ignore="HardcodedText">
 
             </ImageView>
