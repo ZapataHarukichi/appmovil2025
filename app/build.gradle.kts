@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.ir.backend.js.ic.rebuildCacheForDirtyFiles
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -36,8 +34,8 @@ android {
         jvmTarget = "11"
     }
 
-    buildFeatures{
-        viewBinding { true }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
