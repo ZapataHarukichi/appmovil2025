@@ -20,7 +20,7 @@ class ScheduleAdapter(private val scheduleList: List<ScheduleItem>):
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScheduleViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_schedule_fragment, parent, false)
+            .inflate(R.layout.items, parent, false)
         return ScheduleViewHolder(view)
     }
 

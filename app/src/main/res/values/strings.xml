@@ -5,8 +5,11 @@
     <string name="Que_es">¿Qué es Mobile Summit?</string>
     <string name="hora">09:00 am</string>
     <string name="MS_description">Permite a los usuarios registrarse y acceder a conferencias en vivo o grabadas.
-Ofrece agendas personalizadas, recordatorios y notificaciones de eventos.
-Facilita la interacción mediante chats en vivo, encuestas y preguntas al ponente.
-Proporciona acceso a materiales, certificados y networking entre asistentes.
-</string>
+        Ofrece agendas personalizadas, recordatorios y notificaciones de eventos.
+        Facilita la interacción mediante chats en vivo, encuestas y preguntas al ponente.
+        Proporciona acceso a materiales, certificados y networking entre asistentes.
+    </string>
+    <string name="Schedule_titulo">ConferenciaUNS</string>
+    <string name="Schedule_Detail_Description">"Conferencia DevTech 2025: Únete a líderes en desarrollo de software para explorar IA, desarrollo móvil y mejores prácticas en programación moderna. Talleres en vivo y networking incluidos."</string>
+    <string name="user_work_description">Apasionado por el desarrollo de software, con experiencia en la creación de aplicaciones móviles y web. Me enfoco en escribir código limpio, escalable y orientado a soluciones que mejoran la experiencia del usuario."</string>
 </resources>
