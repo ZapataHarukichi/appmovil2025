@@ -9,9 +9,9 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@color/colorsecundario"
+        android:background="@color/colorprimario"
         android:title="Centro Cultural UNS"
-        android:titleTextColor="@android:color/colorprim"
+        android:titleTextColor="@color/colorsecundario"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

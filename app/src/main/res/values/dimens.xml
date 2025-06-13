@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="mi_logo">300dp</dimen>
-    <dimen name="mi_titulo">50sp</dimen>
-    <dimen name="speaker">100dp</dimen>
+    <dimen name="mi_titulo">50dp</dimen>
+    <dimen name="speaker">125dp</dimen>
     <dimen name="redondeadas">3dp</dimen>
     <dimen name="marginHomeSubTitulo">3dp</dimen>
+    <dimen name="mi_toolbar">75dp</dimen>
 </resources>

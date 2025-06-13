@@ -2,36 +2,36 @@
 <androidx.cardview.widget.CardView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:cardCornerRadius="4dp"
     app:cardElevation="1dp"
-    android:layout_margin="15dp">
+    android:layout_margin="50dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/speaker"
             android:layout_height="@dimen/speaker"
-            android:src="@mipmap/ic_launcher_round">
+            android:src="@drawable/logo_user">
         </ImageView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Expositor"
+            android:text="Nombre"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:textColor="#BBBBBB"
+            android:textColor="@color/black"
             android:gravity="center_horizontal"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trabajo"
             android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="#BBBBBB"
+            android:textSize="15sp"
+            android:textColor="@color/black"
             android:gravity="center_horizontal"/>
 
     </LinearLayout>
