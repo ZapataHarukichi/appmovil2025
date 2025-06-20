@@ -14,7 +14,7 @@
         android:layout_height="@dimen/mi_logo"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="50dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

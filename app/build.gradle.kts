@@ -1,11 +1,12 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("com.google.gms.google-services")
 }
 
 android {
     namespace = "com.example.appmovil2025"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.appmovil2025"
@@ -54,6 +55,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("androidx.core:core-ktx:1.13.1")
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.auth)
+    implementation("com.google.firebase:firebase-firestore:25.1.4")
+    implementation ("com.google.firebase:firebase-firestore-ktx:24.10.3")
+
     //implementation("androidx.recyclerview:recyclerview:1.4.0")
     //implementation("androidx.navigation:navigation-ui-ktx:2.9.0")
     //implementation("androidx.navigation:navigation-fragment-ktx:2.9.0")

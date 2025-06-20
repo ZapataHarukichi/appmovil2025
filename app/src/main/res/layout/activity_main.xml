@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ui.MainActivity">
+    tools:context=".ui.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -18,11 +18,21 @@
             android:layout_height="@dimen/mi_toolbar"
             android:background="@drawable/slogan_conferencia">
         </androidx.appcompat.widget.Toolbar>
+
     </com.google.android.material.appbar.AppBarLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBar.AppBarLayout$ScrollingViewBehavior">
+        <fragment
+            android:id="@+id/frag_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_above="@+id/btn_menu"
+            app:navGraph="@navigation/nav_graph"
+            app:defaultNavHost="true"/>
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/btn_menu"
             android:layout_width="match_parent"

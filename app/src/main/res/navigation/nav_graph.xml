@@ -8,33 +8,55 @@
         android:id="@+id/navHomeFragment"
         android:name="com.example.appmovil2025.ui.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_scheduleFragment"
-            app:destination="@id/navScheduleFragment" />
+            app:destination="@id/navScheduleFragment"/>
     </fragment>
     <fragment
         android:id="@+id/navScheduleFragment"
         android:name="com.example.appmovil2025.ui.fragments.ScheduleFragment"
         android:label="fragment_schedule"
-        tools:layout="@layout/fragment_schedule" >
+        tools:layout="@layout/fragment_schedule">
         <action
             android:id="@+id/action_scheduleFragment_to_speakersFragment"
-            app:destination="@id/navSpeakerFragment" />
+            app:destination="@id/navSpeakerFragment"/>
+        <action
+            android:id="@+id/action_navScheduleFragment_to_ScheduleDetailDialogFragment"
+            app:destination="@id/ScheduleDetailDialogFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/navSpeakerFragment"
+    <fragment android:id="@+id/navSpeakerFragment"
         android:name="com.example.appmovil2025.ui.fragments.SpeakersFragment"
-        android:label="fragment_speakers" >
+        android:label="fragment_speakers">
         <action
             android:id="@+id/action_speakersFragment_to_ubicationFragment"
-            app:destination="@id/navMapFragment" />
+            app:destination="@id/navUbicationFragment"/>
+        <action
+            android:id="@+id/action_navSpeakerFragment_to_SpeakersDetailDialogFragment"
+            app:destination="@id/SpeakersDetailDialogFragment" />
     </fragment>
     <fragment
-        android:id="@+id/navMapFragment"
+        android:id="@+id/navUbicationFragment"
         android:name="com.example.appmovil2025.ui.fragments.UbicationFragment"
         android:label="fragment_ubication"
-        tools:layout="@layout/fragment_ubication"/>
-
-
+        tools:layout="@layout/fragment_ubication">
+        <action
+            android:id="@+id/action_navMapFragment_to_UbicationDetailDialogFragment"
+            app:destination="@id/UbicationDetailDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/SpeakersDetailDialogFragment"
+        android:name="com.example.appmovil2025.ui.fragments.SpeakersDetailDialogFragment"
+        android:label="SpeakersDetailDialogFragment"
+        tools:layout="@layout/fragment_speakers_detail_dialog"/>
+    <dialog
+        android:id="@+id/ScheduleDetailDialogFragment"
+        android:name="com.example.appmovil2025.ui.fragments.ScheduleDetailDialogFragment"
+        android:label="ScheduleDetailDialogFragment"
+        tools:layout="@layout/fragment_schedule_detail_dialog"/>
+    <dialog
+        android:id="@+id/UbicationDetailDialogFragment"
+        android:name="com.example.appmovil2025.ui.fragments.UbicationDetailDialogFragment"
+        android:label="UbicationDetailDialogFragment"
+        tools:layout="@layout/fragment_ubication_detail_dialog"/>
 </navigation>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "733057167141",
+    "project_id": "app2025-eb10e",
+    "storage_bucket": "app2025-eb10e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733057167141:android:817ed4dcc6a27dce36f4cc",
+        "android_client_info": {
+          "package_name": "com.example.appmovil2025"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfxYkgYniSCSu-1lGTfMofzPlAmnNlbmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
