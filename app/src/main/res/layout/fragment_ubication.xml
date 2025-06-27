@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.UbicationFragment">
 
-    <fragment
-        android:id="@+id/map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <fragment-->
+<!--        android:id="@+id/map"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-    </fragment>
+<!--    </fragment>-->
 <!--        tools:context=".ui.fragments.UbicationFragment"/>-->
 
 </FrameLayout>

@@ -9,7 +9,7 @@
         android:icon="@drawable/ic_schedule"
         android:title="Programa"/>
     <item
-        android:id="@+id/navSpeakerFragmentr"
+        android:id="@+id/navSpeakerFragment"
         android:icon="@drawable/ic_speaker"
         android:title="Ponentes"/>
     <item

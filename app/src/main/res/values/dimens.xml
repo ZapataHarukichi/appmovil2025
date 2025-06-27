@@ -5,5 +5,5 @@
     <dimen name="speaker">125dp</dimen>
     <dimen name="redondeadas">3dp</dimen>
     <dimen name="marginHomeSubTitulo">3dp</dimen>
-    <dimen name="mi_toolbar">75dp</dimen>
+    <dimen name="mi_toolbar">90dp</dimen>
 </resources>
