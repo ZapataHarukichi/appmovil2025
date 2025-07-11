@@ -1,4 +1,4 @@
-package com.example.appmovil2025.ui.fragments
+package com.example.appmovil2025.view.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

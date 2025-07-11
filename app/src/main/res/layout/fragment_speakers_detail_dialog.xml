@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context=".ui.activities.SplashScreenActivity">
+    tools:context=".view.ui.activities.SplashScreenActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

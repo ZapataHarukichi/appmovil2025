@@ -6,7 +6,7 @@
     app:startDestination="@id/navHomeFragment">
     <fragment
         android:id="@+id/navHomeFragment"
-        android:name="com.example.appmovil2025.ui.fragments.HomeFragment"
+        android:name="com.example.appmovil2025.view.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/navScheduleFragment"
-        android:name="com.example.appmovil2025.ui.fragments.ScheduleFragment"
+        android:name="com.example.appmovil2025.view.ui.fragments.ScheduleFragment"
         android:label="fragment_schedule"
         tools:layout="@layout/fragment_schedule">
         <action
@@ -26,7 +26,7 @@
             app:destination="@id/ScheduleDetailDialogFragment" />
     </fragment>
     <fragment android:id="@+id/navSpeakerFragment"
-        android:name="com.example.appmovil2025.ui.fragments.SpeakersFragment"
+        android:name="com.example.appmovil2025.view.ui.fragments.SpeakersFragment"
         android:label="fragment_speakers">
         <action
             android:id="@+id/action_speakersFragment_to_ubicationFragment"
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/navUbicationFragment"
-        android:name="com.example.appmovil2025.ui.fragments.UbicationFragment"
+        android:name="com.example.appmovil2025.view.ui.fragments.UbicationFragment"
         android:label="fragment_ubication"
         tools:layout="@layout/fragment_ubication">
         <action
@@ -46,17 +46,17 @@
     </fragment>
     <dialog
         android:id="@+id/SpeakersDetailDialogFragment"
-        android:name="com.example.appmovil2025.ui.fragments.SpeakersDetailDialogFragment"
+        android:name="com.example.appmovil2025.view.ui.fragments.SpeakersDetailDialogFragment"
         android:label="SpeakersDetailDialogFragment"
         tools:layout="@layout/fragment_speakers_detail_dialog"/>
     <dialog
         android:id="@+id/ScheduleDetailDialogFragment"
-        android:name="com.example.appmovil2025.ui.fragments.ScheduleDetailDialogFragment"
+        android:name="com.example.appmovil2025.view.ui.fragments.ScheduleDetailDialogFragment"
         android:label="ScheduleDetailDialogFragment"
         tools:layout="@layout/fragment_schedule_detail_dialog"/>
     <dialog
         android:id="@+id/UbicationDetailDialogFragment"
-        android:name="com.example.appmovil2025.ui.fragments.UbicationDetailDialogFragment"
+        android:name="com.example.appmovil2025.view.ui.fragments.UbicationDetailDialogFragment"
         android:label="UbicationDetailDialogFragment"
         tools:layout="@layout/fragment_ubication_detail_dialog"/>
 </navigation>

@@ -19,7 +19,7 @@
         <!-- android:name="android.permission.CALL_PHONE"> -->
         <!-- </uses-permission> -->
         <activity
-            android:name = ".MainActivity"
+            android:name = ".view.ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

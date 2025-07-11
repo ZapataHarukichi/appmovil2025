@@ -1,4 +1,4 @@
-package com.example.appmovil2025.ui.fragments
+package com.example.appmovil2025.view.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,10 +13,11 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [UbicationDetailDialogFragment.newInstance] factory method to
+ * Use the [ScheduleDetailDialogFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class UbicationDetailDialogFragment : Fragment() {
+class ScheduleDetailDialogFragment : Fragment() {
+
     private var param1: String? = null
     private var param2: String? = null
 
@@ -33,6 +34,7 @@ class UbicationDetailDialogFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ubication_detail_dialog, container, false)
+        return inflater.inflate(R.layout.fragment_schedule_detail_dialog, container, false)
     }
+
 }

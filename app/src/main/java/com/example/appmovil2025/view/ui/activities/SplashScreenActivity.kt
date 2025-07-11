@@ -1,4 +1,4 @@
-package com.example.appmovil2025.ui.activities
+package com.example.appmovil2025.view.ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

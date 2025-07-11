@@ -7,4 +7,5 @@ class Conferencia {
     lateinit var descripcion: String
     lateinit var topico : String
     lateinit var horafecha: Date
+    lateinit var expositor: String
 }
