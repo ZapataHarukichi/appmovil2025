@@ -21,7 +21,7 @@ class PonentesViewModel : ViewModel(){
     private fun getConferenciasFromFirebase(){
         firestoreService.getPonentes(object: Callback<List<Ponente>> {
             @SuppressLint("NullSafeMutableLiveData")
-            override fun onSuccess(result: List<Ponente>?) {
+            override fun onSuccess(result: List<Ponente>) {
                 listadoPonentes.postValue(result)
                 processFinished()
             }

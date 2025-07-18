@@ -13,11 +13,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageView
+            android:id="@+id/imgSpeaker"
             android:layout_width="@dimen/speaker"
             android:layout_height="@dimen/speaker"
             android:src="@drawable/logo_user">
         </ImageView>
         <TextView
+            android:id="@+id/SpkName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Nombre"
@@ -26,9 +28,19 @@
             android:textColor="@color/black"
             android:gravity="center_horizontal"/>
         <TextView
+            android:id="@+id/SpkTrabajo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trabajo"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/SpkProfesion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profesion"
             android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/black"
