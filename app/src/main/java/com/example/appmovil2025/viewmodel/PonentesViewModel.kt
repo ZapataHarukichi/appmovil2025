@@ -8,7 +8,7 @@ import com.example.appmovil2025.network.FirestoreService
 
 import kotlin.collections.List
 
-class ConferenciasViewModel{
+class PonentesViewModel : ViewModel(){
     val firestoreService = FirestoreService()
     var listadoPonentes: MutableLiveData<List<Ponente>> = MutableLiveData()
     var isloading = MutableLiveData<Boolean>()
@@ -19,7 +19,7 @@ class ConferenciasViewModel{
 
 
     private fun getConferenciasFromFirebase(){
-        firestoreService.getConferencias(object:Callback<List<Ponente>>{
+        firestoreService.getPonentes(object: Callback<List<Ponente>> {
             @SuppressLint("NullSafeMutableLiveData")
             override fun onSuccess(result: List<Ponente>?) {
                 listadoPonentes.postValue(result)

@@ -19,7 +19,7 @@
         <!-- android:name="android.permission.CALL_PHONE"> -->
         <!-- </uses-permission> -->
         <activity
-            android:name = ".view.ui.activities.MainActivity"
+            android:name = ".view.ui.activities.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.ui.activities.MainActivity"/>
     </application>
 
 </manifest>

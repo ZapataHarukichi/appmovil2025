@@ -18,6 +18,8 @@ navigationFragmentKtxVersion = "2.9.0"
 navigationUiKtx = "2.6.0"
 navigationFragment = "2.9.0"
 navigationUiKtxVersion = "2.9.0"
+androidxNavigationFragmentKtx = "2.9.1"
+androidxNavigationUiKtx = "2.9.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -40,6 +42,8 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 firebase-analytics = {module = "com.google.firebase:firebase-analytics-ktx"}
 firebase-auth = {module = "com.google.firebase:firebase-auth-ktx"}
 androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidxNavigationFragmentKtx" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigationUiKtx" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
