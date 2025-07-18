@@ -51,6 +51,9 @@ class ScheduleFragment : Fragment(), ScheduleListener {
         recyclerView = view.findViewById(R.id.RVSchedule)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         adapter = ConferenciaAdapter(this)
+        recyclerView.apply{
+
+        }
         recyclerView.adapter = adapter
 
         // inicializar VM
