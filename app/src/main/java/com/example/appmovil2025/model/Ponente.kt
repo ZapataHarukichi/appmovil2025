@@ -6,7 +6,7 @@ class Ponente{
     var trabajo: String = ""
     var biografia: String = ""
     var twitter: String = ""
-    var imagen: String = ""
+    var imagen: String? = null
     var categoria = 0
 }
 

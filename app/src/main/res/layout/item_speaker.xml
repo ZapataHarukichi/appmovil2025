@@ -2,47 +2,52 @@
 <androidx.cardview.widget.CardView
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="4dp"
-    app:cardElevation="1dp"
-    android:layout_margin="50dp">
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp"
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
         <ImageView
             android:id="@+id/imgSpeaker"
             android:layout_width="@dimen/speaker"
             android:layout_height="@dimen/speaker"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle_background"
             android:src="@drawable/logo_user">
         </ImageView>
         <TextView
             android:id="@+id/SpkName"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nombre"
-            android:textStyle="bold"
             android:textSize="20sp"
+            android:textStyle="bold"
             android:textColor="@color/black"
             android:gravity="center_horizontal"/>
         <TextView
             android:id="@+id/SpkTrabajo"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Trabajo"
-            android:textStyle="bold"
             android:textSize="15sp"
             android:textColor="@color/black"
             android:gravity="center_horizontal"/>
         <TextView
             android:id="@+id/SpkProfesion"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Profesion"
-            android:textStyle="bold"
-            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textSize="14sp"
             android:textColor="@color/black"
             android:gravity="center_horizontal"/>
 

@@ -3,6 +3,7 @@ package com.example.appmovil2025.view.ui.activities
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
@@ -14,12 +15,19 @@ class MainActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val testView = findViewById<View>(R.id.nav_host_fragment)
-        Log.d("DEBUG", "¿NavHost existe? " + (testView != null))
+        enableEdgeToEdge()
+        setSupportActionBar(findViewById(R.id.toolbar_principal))
+        supportActionBar?.title = "MOBILE SUMMIT 2025"
+        configNav()
 
-        val navController = findNavController(R.id.nav_host_fragment)
-        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.btn_menu)
-        NavigationUI.setupWithNavController(bottomNavigationView, navController)
+        }
+        private fun configNav(){
+            val navController = findNavController(R.id.nav_host_fragment)
+            val bottomNavigationView = findViewById<BottomNavigationView>(R.id.btn_menu)
+            NavigationUI.setupWithNavController(bottomNavigationView, navController)
+        }
+
+//
 //        val firebaseFirestore = FirebaseFirestore.getInstance()
 //        for (i in 0 until jsonArr2.length()) {
 //            val aux = jsonArr2.getJSONObject(i)
@@ -34,6 +42,4 @@ class MainActivity: AppCompatActivity() {
 //
 //            firebaseFirestore.collection("Conferencias").document().set(conferencia)
 //        }
-
-    }
 }

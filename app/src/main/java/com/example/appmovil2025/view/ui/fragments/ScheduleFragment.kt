@@ -19,6 +19,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.appmovil2025.view.adapter.ScheduleListener
 import com.example.appmovil2025.viewmodel.ConferenciasViewModel
 import android.widget.ProgressBar
+import androidx.core.os.bundleOf
+import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
+import java.io.OutputStream
 
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 /*private const val ARG_PARAM1 = "param1"
@@ -34,6 +38,7 @@ class ScheduleFragment : Fragment(), ScheduleListener {
     private lateinit var adapter: ConferenciaAdapter
     private lateinit var viewModel: ConferenciasViewModel
     private lateinit var firestoreService: FirestoreService
+    private lateinit var progressBar : ProgressBar
 
     private val listaConferencias = ArrayList<Conferencia>()
 
@@ -55,43 +60,36 @@ class ScheduleFragment : Fragment(), ScheduleListener {
 //
 //        }
         recyclerView.adapter = adapter
+        progressBar = view.findViewById<ProgressBar>(R.id.progressBarSchedule)
 
         // inicializar VM
-        viewModel = ViewModelProvider(this).get(ConferenciasViewModel::class.java)
+        viewModel = ViewModelProvider(this)[ConferenciasViewModel::class.java]
+        observeViewModel()
         viewModel.refresh()
+    }
 
-        val progressBar = view.findViewById<ProgressBar>(R.id.progressBarSchedule)
+    override fun onConferenciaClicked(conferencia: Conferencia, position: Int) {
+        Toast.makeText(requireContext(), "Clic en ${conferencia.titulo}", Toast.LENGTH_SHORT).show()
+        val bundle = Bundle().apply {
+            putSerializable("conferencia", conferencia)
+        }
+        findNavController().navigate(R.id.ScheduleDetailDialogFragment, bundle)
 
+    }
+    private fun cargarConferencias(lista: List<Conferencia>){
+        adapter.updateData(lista)
+        adapter.notifyDataSetChanged()
+    }
+
+    fun observeViewModel(){
         viewModel.isloading.observe(viewLifecycleOwner) { loading ->
             progressBar.visibility = if (loading) View.VISIBLE else View.GONE
         }
 
         viewModel.listadoConferencias.observe(viewLifecycleOwner){ conferencias ->
             adapter.updateData(conferencias)
-
             viewModel.isloading.observe(viewLifecycleOwner) {loading ->  }
         }
-
-//        firestoreService = FirestoreService()
-//
-//        firestoreService.getConferencias(object : Callback<List<Conferencia>>{
-//            override fun onSuccess(result: List<Conferencia>) {
-//                cargarConferencias(result)
-//            }
-//
-//            override fun onFailed(e: Exception) {
-//                Log.e("ScheduleFragment", "Error al cargar conferencias", e)
-//            }
-//        })
-
-    }
-
-    override fun onConferenciaClicked(conferencia: Conferencia, position: Int) {
-        Toast.makeText(requireContext(), "Clic en ${conferencia.titulo}", Toast.LENGTH_SHORT).show()
-    }
-    private fun cargarConferencias(lista: List<Conferencia>){
-        adapter.updateData(lista)
-        adapter.notifyDataSetChanged()
     }
 
 

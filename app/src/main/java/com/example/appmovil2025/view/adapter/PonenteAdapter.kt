@@ -13,15 +13,23 @@ import com.bumptech.glide.Glide
 class PonenteAdapter(val speakerListener: SpeakerListener): RecyclerView.Adapter<PonenteAdapter.ViewHolder>() {
     var listadoPonentes = ArrayList<Ponente>()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int
-    ) = ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_schedule, parent, false))
+    ) = ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_speaker, parent, false))
 
-    override fun onBindViewHolder(holder: PonenteAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder:PonenteAdapter.ViewHolder, position: Int) {
         val ponente = listadoPonentes[position] as Ponente
 
-        Glide.with(holder.itemView.context)
-            .load(ponente.imagen)
-            .placeholder(R.drawable.logo_user)
-            .into(holder.spkImage)
+        val imagenURL = ponente.imagen
+        if (!imagenURL.isNullOrEmpty()){
+            Glide.with(holder.itemView.context)
+                .load(imagenURL)
+                .placeholder(R.drawable.logo_user)
+                .error(R.drawable.logo_user)
+                .into(holder.spkImage)
+
+        } else{
+            holder.spkImage.setImageResource(R.drawable.logo_user)
+        }
+
         holder.spkName.text = ponente.nombre
         holder.spkProfesion.text = ponente.profesion
         holder.spkTrabajo.text = ponente.trabajo

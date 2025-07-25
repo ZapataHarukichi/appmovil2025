@@ -5,5 +5,9 @@
     <color name="colorprimario">#45B0AE</color>
     <color name="colorsecundario">#D82F4B</color>
     <color name="coloralternativo">#BF9511</color>
-    <color name="colornegroalternativo">#1E1F22</color>
+
+    <color name="colorPrimary"></color>
+    <color name="colorPrimaryDark"></color>
+    <color name="colorAcent"></color>
+
 </resources>

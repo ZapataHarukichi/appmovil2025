@@ -14,8 +14,8 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_principal"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/mi_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
             android:background="@drawable/slogan_conferencia">
         </androidx.appcompat.widget.Toolbar>
 
@@ -29,7 +29,8 @@
             android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
             android:layout_above="@+id/btn_menu"
             app:navGraph="@navigation/nav_graph"
             app:defaultNavHost="true"/>

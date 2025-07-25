@@ -17,16 +17,14 @@ class ConferenciaAdapter(val scheduleListener: ScheduleListener): RecyclerView.A
     ) = ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_schedule, parent, false))
 
     override fun onBindViewHolder(holder: ConferenciaAdapter.ViewHolder, position: Int) {
-        val conferencia = listadoConferencias[position] as Conferencia
+        val conferencia = listadoConferencias[position]
 
         holder.tvTituloConferencia.text = conferencia.titulo
-        val simpleDateFormat = SimpleDateFormat("HH:mm a", Locale.getDefault())
 
-        val cal = Calendar.getInstance()
-        cal.time = conferencia.horafecha
-
+        val simpleDateFormat = SimpleDateFormat("hh:mm a", Locale.getDefault())
         val horarioFormato = simpleDateFormat.format(conferencia.horafecha)
         holder.tvHoraConferencia.text = horarioFormato
+
         holder.tvExpositor.text = conferencia.expositor
         holder.tvTopic.text = conferencia.topico
 
@@ -34,6 +32,7 @@ class ConferenciaAdapter(val scheduleListener: ScheduleListener): RecyclerView.A
             scheduleListener.onConferenciaClicked(conferencia, position)
         }
     }
+
 
     override fun getItemCount() = listadoConferencias.size
 

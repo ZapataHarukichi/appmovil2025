@@ -14,11 +14,12 @@ class PonentesViewModel : ViewModel(){
     var isloading = MutableLiveData<Boolean>()
 
     fun refresh(){
-        getConferenciasFromFirebase()
+        isloading.value = true
+        getPonentesFromFirebase()
     }
 
 
-    private fun getConferenciasFromFirebase(){
+    private fun getPonentesFromFirebase(){
         firestoreService.getPonentes(object: Callback<List<Ponente>> {
             @SuppressLint("NullSafeMutableLiveData")
             override fun onSuccess(result: List<Ponente>) {
@@ -36,6 +37,6 @@ class PonentesViewModel : ViewModel(){
     }
 
     private fun processFinished(){
-        isloading.value = true
+        isloading.value = false
     }
 }

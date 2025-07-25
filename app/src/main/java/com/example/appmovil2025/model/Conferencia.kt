@@ -1,11 +1,14 @@
 package com.example.appmovil2025.model
 
+import com.google.type.DateTime
 import java.util.Date
+import java.io.Serializable
 
-class Conferencia {
-    lateinit var titulo: String
-    lateinit var descripcion: String
-    lateinit var topico : String
-    lateinit var horafecha: Date
-    lateinit var expositor: String
-}
+data class Conferencia(
+    val titulo: String = "",
+    val descripcion: String = "",
+    val topico: String = "",
+    val horafecha: Date = Date(),
+    val expositor: String = ""
+) : Serializable
+
