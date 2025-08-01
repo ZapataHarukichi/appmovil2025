@@ -11,21 +11,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/TvSpeakerDetailDialog"
+            android:id="@+id/ToolbarSpeakerDetailDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal">
             <ImageView
-                android:id="@+id/TVSpeakerUserDetailDialog"
+                android:id="@+id/speakerDetailImage"
                 android:layout_width="125dp"
                 android:layout_height="125dp"
                 android:src="@drawable/logo_user"
@@ -33,7 +34,7 @@
                 android:layout_gravity="center"/>
 
             <TextView
-                android:id="@+id/TvUserName"
+                android:id="@+id/speakerDetailName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre Apellido"
@@ -43,7 +44,7 @@
                 android:textStyle="bold"
                 android:layout_centerInParent="true"/>
             <TextView
-                android:id="@+id/TvUserJobTitle"
+                android:id="@+id/speakerDetailJobTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Job Title"
@@ -53,7 +54,7 @@
                 android:textStyle="bold"
                 android:layout_centerInParent="true"/>
             <TextView
-                android:id="@+id/TvUserCompany"
+                android:id="@+id/speakerDetailCompany"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Trabajo"
@@ -66,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:id="@+id/IVTwitter"
+                    android:id="@+id/speakerDetailTwitter"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:src="@drawable/ic_twitter"
@@ -74,28 +75,28 @@
                     android:padding="1dp"
                     android:layout_marginRight="5dp"
                     android:contentDescription="Twitter"/>
-                <ImageView
-                    android:id="@+id/IvFacebook"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_facebook"
-                    android:layout_marginTop="8dp"
-                    android:padding="5dp"
-                    android:layout_marginRight="5dp"
-                    android:contentDescription="Facebook"/>
-                <ImageView
-                    android:id="@+id/IvInstagram"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@drawable/ic_instagram"
-                    android:layout_marginTop="8dp"
-                    android:padding="1dp"
-                    android:contentDescription="Instagram"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/IvFacebook"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/ic_facebook"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:contentDescription="Facebook"/>-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/IvInstagram"-->
+<!--                    android:layout_width="40dp"-->
+<!--                    android:layout_height="40dp"-->
+<!--                    android:src="@drawable/ic_instagram"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:padding="1dp"-->
+<!--                    android:contentDescription="Instagram"/>-->
 
             </LinearLayout>
 
             <TextView
-                android:id="@+id/TVUserDescription"
+                android:id="@+id/speakerDetailDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="12dp"

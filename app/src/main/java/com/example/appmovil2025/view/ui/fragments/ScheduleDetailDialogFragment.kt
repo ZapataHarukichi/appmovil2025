@@ -1,6 +1,5 @@
 package com.example.appmovil2025.view.ui.fragments
 
-import android.app.DialogFragment
 import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,9 +8,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.example.appmovil2025.R
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContentProviderCompat.requireContext
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.DialogFragment
 import com.example.appmovil2025.databinding.FragmentScheduleDetailDialogBinding
 import com.example.appmovil2025.model.Conferencia
 import org.w3c.dom.Text
@@ -19,18 +19,13 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ScheduleDetailDialogFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ScheduleDetailDialogFragment : DialogFragment() {
     private var _binding: FragmentScheduleDetailDialogBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setStyle(STYLE_NORMAL, R.style.FullScreenDetailStyle)
+//        setStyle(STYLE_NORMAL, R.style.FullScreenDetailStyle)
     }
 
     override fun onCreateView(

@@ -1,13 +1,15 @@
 package com.example.appmovil2025.model
 
-class Ponente{
+import java.io.Serializable
+
+class Ponente: Serializable{
     var nombre: String = ""
     var profesion: String = ""
     var trabajo: String = ""
     var biografia: String = ""
     var twitter: String = ""
     var imagen: String? = null
-    var categoria = 0
+    var categoria: Int = 0
 }
 
 

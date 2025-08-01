@@ -14,14 +14,13 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="15dp">
         <ImageView
             android:id="@+id/imgSpeaker"
             android:layout_width="@dimen/speaker"
             android:layout_height="@dimen/speaker"
             android:scaleType="centerCrop"
             android:layout_marginBottom="8dp"
-            android:background="@drawable/circle_background"
             android:src="@drawable/logo_user">
         </ImageView>
         <TextView

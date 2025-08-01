@@ -17,7 +17,7 @@ class MainActivity: AppCompatActivity() {
 
         enableEdgeToEdge()
         setSupportActionBar(findViewById(R.id.toolbar_principal))
-        supportActionBar?.title = "MOBILE SUMMIT 2025"
+        supportActionBar?.setDisplayShowTitleEnabled(false)
         configNav()
 
         }

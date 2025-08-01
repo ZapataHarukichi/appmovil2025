@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     tools:context=".view.ui.fragments.ScheduleDetailDialogFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -94,14 +94,15 @@
                             android:textSize="12sp"
                             android:layout_marginTop="4dp"
                             android:layout_marginBottom="10dp"
+                            android:padding="7dp"
                             android:layout_gravity="center_horizontal" />
                         <TextView
                             android:id="@+id/TVItemScheduleDescripcionDetailDialog"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textStyle="italic"
                             android:textSize="15sp"
                             android:layout_margin="5dp"
+                            android:lineSpacingExtra="5dp"
                             android:text="@string/Schedule_Detail_Description"/>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>

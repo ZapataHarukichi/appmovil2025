@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,7 +17,6 @@ import com.example.appmovil2025.model.Ponente
 import com.example.appmovil2025.view.adapter.PonenteAdapter
 import com.example.appmovil2025.view.adapter.SpeakerListener
 import com.example.appmovil2025.viewmodel.PonentesViewModel
-
 
 /**
  * A simple [Fragment] subclass.
@@ -59,7 +59,11 @@ class SpeakersFragment : Fragment(R.layout.fragment_speakers), SpeakerListener {
         }
     }
 
-    override fun onPonenteClicked(speaker: Ponente, position: Int){
-        Toast.makeText(requireContext(), "Clic en ${speaker.nombre}", Toast.LENGTH_SHORT).show()
+    override fun onPonenteClicked(ponente: Ponente, position: Int){
+        Toast.makeText(requireContext(), "Clic en ${ponente.nombre}", Toast.LENGTH_SHORT).show()
+        val bundle = Bundle().apply {
+            putSerializable("ponente", ponente)
+        }
+        findNavController().navigate(R.id.SpeakersDetailDialogFragment, bundle)
     }
 }

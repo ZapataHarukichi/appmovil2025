@@ -42,15 +42,9 @@
                 android:layout_height="wrap_content"
                 android:text="Nombre expositor"
                 android:textSize="14sp"/>
+
             <TextView
                 android:id="@+id/TvItemScheduleTopic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tópico"
-                android:textSize="12sp"
-                android:textColor="@android:color/darker_gray"/>
-            <TextView
-                android:id="@+id/TvItemScheduleTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Design"
