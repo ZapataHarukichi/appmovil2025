@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/toolbarCentroCultural"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorprimario"
@@ -27,6 +27,7 @@
             android:layout_marginTop="75dp"/>
 
         <TextView
+            android:id="@+id/textTituloCentro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Centro Cultural UNS"
@@ -48,6 +49,7 @@
                 android:padding="0dp"
                 android:src="@drawable/ic_ubicacion"/>
             <TextView
+                android:id="@+id/textDireccion"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="1dp"
@@ -71,6 +73,7 @@
                 android:padding="5dp"
                 android:src="@drawable/ic_telefono"/>
             <TextView
+                android:id="@+id/textTelefono"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="15dp"
@@ -94,6 +97,7 @@
                 android:src="@drawable/ic_enlace"
                 android:padding="5dp"/>
             <TextView
+                android:id="@+id/textEnlace"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
@@ -102,7 +106,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

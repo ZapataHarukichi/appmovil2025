@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,12 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Appmovil2025"
         tools:targetApi="31">
-        <!-- <uses-permission -->
-        <!-- android:name="android.permission.ACCESS_COARSE_LOCATION"> -->
-        <!-- </uses-permission> -->
-        <!-- <uses-permission -->
-        <!-- android:name="android.permission.CALL_PHONE"> -->
-        <!-- </uses-permission> -->
+
         <activity
             android:name = ".view.ui.activities.SplashScreenActivity"
             android:exported="true">
@@ -28,6 +27,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.ui.activities.MainActivity"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDgAI1tdvk0ZxBxzPLpycqaTA0Co5HaDw4"/>
     </application>
 
 </manifest>
